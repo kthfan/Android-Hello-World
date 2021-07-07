@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/starIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_weight="1"
+
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/starItemLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="TextView" />
+</LinearLayout >

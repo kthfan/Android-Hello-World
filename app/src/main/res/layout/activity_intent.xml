@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/webPageBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onWebPageBnClick"
+            android:text="Web Page" />
+
+        <Button
+            android:id="@+id/mailBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onMailBnClick"
+            android:text="Mail" />
+
+        <Button
+            android:id="@+id/phoneBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPhoneBnClick"
+            android:text="Phone" />
+
+        <Button
+            android:id="@+id/googleMapBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onGoogleMapBnClick"
+            android:text="Google Map" />
+        <EditText
+            android:id="@+id/op1Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/calcActivityBn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCalcBnClick"
+            android:text="calc" />
+        <TextView
+            android:id="@+id/intentResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
