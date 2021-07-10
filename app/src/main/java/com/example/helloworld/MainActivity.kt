@@ -90,4 +90,22 @@ class MainActivity : AppCompatActivity() {
     fun testService(view: View){
         _createActivity(ServiceActivity::class.java)
     }
+    fun testPhotograph(view: View){
+        _createActivity(PhotographActivity::class.java)
+    }
+    fun testRecordVideo(view: View){
+        _createActivity(RecordVideoActivity::class.java)
+    }
+    fun testSharedPref(view: View) {
+        _createActivity(SharedPrefActivity::class.java)
+    }
+    fun testSensor(view : View){
+        _createActivity(SensorActivity::class.java)
+    }
+    fun testGPS(view : View){
+        _createActivity(GpsActivity::class.java)
+    }
+    fun testSQLite(view : View){
+        _createActivity(SQLiteActivity::class.java)
+    }
 }

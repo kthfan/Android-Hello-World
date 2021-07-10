@@ -4,6 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhotographMainActivity">
+    tools:context=".PhotographActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="259dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:onClick="onTakePhoto1Click"
+                    android:text="拍照" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:onClick="onTakePhoto2Click"
+                    android:text="拍照" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:onClick="onShowImage2Click"
+                    android:text="圖片" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/photographImage"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextureView
+            android:id="@+id/photographSurface"
+            android:layout_width="match_parent"
+            android:layout_height="190dp" />
+        <TextView
+            android:id="@+id/photographState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="empty state" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

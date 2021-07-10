@@ -6,4 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".SharedPrefActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="key: " />
+
+            <EditText
+                android:id="@+id/prefPutKeyEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value: " />
+
+            <EditText
+                android:id="@+id/prefPutVaLEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="6" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="putPref"
+                android:text="submit" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="key: " />
+            <EditText
+                android:id="@+id/prefGetKeyEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="5" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="getPref"
+                android:text="get"/>
+            <TextView
+                android:id="@+id/prefGetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="key: " />
+            <EditText
+                android:id="@+id/prefDelKeyEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="5" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removePref"
+                android:text="Delete"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clearPref"
+                android:text="Clear"/>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/prefListItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
